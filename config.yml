@@ -1,0 +1,117 @@
+data_path: C:\Users\manteniotim\Documents\projects\airtech_data\airtech_data\certh_house_v01__ext_training.csv
+models:
+  temperature_c:
+    features:
+      - 'temperature_outdoor_c'
+      - 'rh_outdoor_percent'
+      - 'hour'
+      - 'weekday'
+      - 'month'
+    models:
+      - 'RF'
+      - 'GBM'
+      - 'LightGBM'
+      - 'CatBoost'
+      - 'XGBoost'
+      - 'AdaBoost'
+  
+  rh_percent:
+    features:
+      - 'rh_outdoor_percent'
+      - 'doy_sin'
+      - 'doy_cos'
+      - 'hour_sin'
+      - 'hour_cos'
+    models:
+      - 'RF'
+      - 'Lasso'
+      - 'CatBoost'
+  
+  luminance_lux:
+    features:
+      - 'direct_radiation'
+      - 'shortwave_radiation'
+      - 'hour_sin'
+      - 'hour_cos'
+      - 'doy_sin'
+      - 'doy_cos'
+
+    models:
+      - 'RF'
+      - 'GBM'
+      - 'XGBoost'
+      - 'CatBoost'
+    
+  average_noise_db:
+    features:
+    - 'rain'
+    - 'wind_speed_10m'
+    - 'wind_gusts_10m'
+    - 'hour'
+    - 'is_weekend'
+    - 'hour_sin'
+    - 'hour_cos'
+    - 'doy_sin'
+    - 'doy_cos'
+
+    models:
+      - 'RF'
+      - 'LightGBM'
+      - 'KNN'
+      - 'GBM'
+      - 'CatBoost'
+  
+  co2_ppm:
+    features:
+      - 'temperature_outdoor_c'
+      - 'rh_outdoor_percent'
+      - 'hour'
+      - 'weekday'
+      - 'month'
+    models:
+      - 'RF'
+      - 'GBM'
+      - 'DT'
+      - 'CatBoost'
+
+  tvoc_ppb:
+    features:
+      - 'temperature_outdoor_c'
+      - 'rh_outdoor_percent'
+      - 'hour'
+      - 'weekday'
+      - 'month'
+    models:
+      - 'RF' 
+      - 'GBM'
+      - 'DT'
+      - 'CatBoost'  
+
+  pm2_5:
+    features:
+      - 'temperature_outdoor_c'
+      - 'rh_outdoor_percent'
+      - 'hour'
+      - 'weekday'
+      - 'month'
+    models:
+      - 'RF' 
+      - 'GBM'
+      - 'DT'
+      - 'CatBoost'
+
+
+  pm10:
+    features:
+      - 'temperature_outdoor_c'
+      - 'rh_outdoor_percent'
+      - 'hour'
+      - 'weekday'
+      - 'month'
+    models:
+      - 'RF' 
+      - 'GBM'
+      - 'DT'
+      - 'CatBoost'
+
+  
