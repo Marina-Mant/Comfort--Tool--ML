@@ -13,4 +13,6 @@ This repository includes:
                          (1) for training and evaluating the models,
                          (2) for predicting the values of our target features based on the architecture of the CSV the first script was written on,
                          (3) for the creation of an interactive dashboard with three tabs (to make it user friendly), written using the streamlit library  
-The data I made the project for are not provided as they are not my property.
+
+
+The data I made the project for are not provided, as they are not my property.
