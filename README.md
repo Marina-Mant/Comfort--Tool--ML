@@ -8,7 +8,7 @@ This repository includes:
 3) a CSV summary of the best performing models per target, with their respective metrics
 4) an environment.yml file
 5) a requirements.txt file (includes the python libraries versions to ensure the efficiency of the python scripts)
-6) CSV file for the feature importances per target and model
+6) CSV file for feature importances per target and model
 7) Three python scripts:
                          (1) for training and evaluating the models,
                          (2) for predicting the values of our target features based on the architecture of the CSV the first script was written on,
